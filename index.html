@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="typescript.ts">
+    <title>Front end developement test</title>
+</head>
+<body>
+   <div class="container">
+    <h1>JSONPlaceholder API Showcase</h1>
+    <button (click)="getAllposts()">Get All Posts</button>
+    <button (click)="createPosts()">Create New Post</button>
+    <button (click)="updatePost()">Update Post</button>
+    <button (click)="deletePost()">Delete Post</button>
+    <div *ngFor="let post of posts">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+    </div>
+   </div>
+</body>
+</html>
